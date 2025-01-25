@@ -1,0 +1,72 @@
+html {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  width: 98vw;
+  height: 98vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: cursive;
+}
+
+h3 {
+  animation: glaze 2s ease-in-out infinite;
+}
+.btn {
+  margin: 20px 0px;
+  color: green;
+  text-shadow: 0 0 2vw green;
+  border: green 2px solid;
+  padding: 6px 12px;
+  background: transparent;
+  border-radius: 10px;
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn:active {
+  background-color: green;
+  color: white;
+  transform: translateY(4px);
+}
+
+@keyframes glaze {
+  50% {
+    color: green;
+    text-shadow: 0 0 2vw green;
+  }
+}
+
+h6 {
+  color: turquoise;
+  opacity: 70%;
+}
+
+.start {
+  background-color: yellow;
+  border: 1px solid red;
+  border-radius: 50%;
+  width: 2.3rem;
+  height: 2.3rem;
+  animation: glow 750ms ease-in-out infinite;
+  transition: transform 750ms;
+}
+
+@keyframes glow {
+  50% {
+    box-shadow: 0 0 0 0.5rem #8b4000;
+  }
+}
+
+.hide-ball,
+.hide-reload,
+.hidden {
+  display: none;
+}
+
+.show-reload {
+  display: block;
+}
